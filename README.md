@@ -7,7 +7,7 @@ Generate 3D point clouds and meshes from 2D images without depth data.
 ## Example
 **2D Image**               |  **3D Mesh**
 :-------------------------:|:-------------------------:
-<img src="https://github.com/adityapatel149/Image2PointCloud/blob/main/data/test%20(15).jpg" width="480" >  |  <img src="https://github.com/adityapatel149/Image2PointCloud/blob/main/test.gif" width="480" />
+<img src="https://github.com/adityapatel149/Image2PointCloud/blob/main/data/test%20(15).jpg" width="300" >  |  <img src="https://github.com/adityapatel149/Image2PointCloud/blob/main/test.gif" width="480" />
 
 ## Features
 - **Depth Estimation**: Utilizes DepthAnythingV2 to infer depth maps from 2D images.
