@@ -4,6 +4,11 @@ Generate 3D point clouds and meshes from 2D images without depth data.
 ## Overview
 **Image2PointCloud** is a Python-based tool that generates 3D point clouds and meshes from one or more 2D images without requiring depth data. It leverages the **DepthAnythingV2** model to estimate depth maps from input images and constructs point clouds accordingly. For multi-view images, the tool performs global and non-rigid registration to refine the point cloud alignment, followed by mesh generation using Poisson surface reconstruction.
 
+## Example
+**2D Image**               |  **3D Mesh**
+:-------------------------:|:-------------------------:
+![](https://github.com/adityapatel149/Image2PointCloud/blob/main/data/test%20(15).jpg)   |  ![](https://github.com/adityapatel149/Image2PointCloud/blob/main/test.gif)
+
 ## Features
 - **Depth Estimation**: Utilizes DepthAnythingV2 to infer depth maps from 2D images.
 - **Point Cloud Generation**: Constructs a 3D point cloud from the estimated depth maps.
