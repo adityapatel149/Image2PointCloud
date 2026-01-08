@@ -12,9 +12,18 @@ import probreg
 
 def preprocess_images(directory_path, res = 720):
     images = []
+    valid_ext = (".png", ".jpg", ".jpeg", ".bmp", ".webp")
+
 
     for filename in os.listdir(directory_path):
         img_path = os.path.join(directory_path, filename)
+
+        if not os.path.isfile(img_path):
+            continue
+
+        if not filename.lower().endswith(valid_ext):
+            continue
+
         image = Image.open(img_path)
         image = image.convert("RGB")
         new_height = res if image.height > res else image.height

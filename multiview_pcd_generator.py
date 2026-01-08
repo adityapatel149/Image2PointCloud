@@ -12,7 +12,7 @@ def main():
     
     # Generate and Save Point Clouds
     pcd_list = generate_pcd(directory_path,feature_extractor, model)
-    for i, p in pcd_list:
+    for i, p in enumerate(pcd_list):
         o3d.io.write_point_cloud(f"./pointclouds/pcd{i}.ply", p.to_legacy())
     
     # Merge and Display Point Clouds
